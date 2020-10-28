@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BecomeSponsor } from './pages/BecomeSponsor';
 import { Family } from './pages/Familia';
+import { Donation } from './pages/Donation';
 import { Home } from './pages/Home/index';
 import * as serviceWorker from './serviceWorker';
 import { GlobalContainer } from './styles/global';
+import { Adoption } from './pages/Adoption';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,6 +16,9 @@ ReactDOM.render(
       <Switch>
         <Route path={`/`} exact component={Home} />
         <Route path={`/familia-acolhedora`} exact component={Family} />
+        <Route path={`/seja-padrinho`} exact component={BecomeSponsor} />
+        <Route path={`/doacao`} exact component={Donation} />
+        <Route path={`/adoption`} exact component={Adoption} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

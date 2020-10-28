@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
-import img from './imposto.png'
+import img from './imposto.png';
 import { AboutCardContainer, Container } from './styles';
 
 interface AboutCardProps {
@@ -87,13 +89,11 @@ export const Home: React.FC = () => {
                 </div>
             </div>
             <div className="sponsor-button">
-                <p>
+                <Link to="seja-padrinho">
                     Quero ser um padrinho!
-            </p>
+                </Link>
             </div>
-            <footer>
-                © 2020 Lar Batista Janell Doyle / www.larbatistamanaus.org / Manaus, Brasil
-            </footer>
+            <Footer />
         </Container>
     );
 }
