@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9bab8870ca5f621ec553a41cd6f16562",
+    "revision": "2fe5fa6976388360903cf2211797b179",
     "url": "/larbatista/index.html"
   },
   {
-    "revision": "d26eee8cd01759b49108",
-    "url": "/larbatista/static/js/2.27a85411.chunk.js"
+    "revision": "12c8dcf11c37f16e5f1a",
+    "url": "/larbatista/static/js/2.8cd5ef55.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/larbatista/static/js/2.27a85411.chunk.js.LICENSE.txt"
+    "url": "/larbatista/static/js/2.8cd5ef55.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5c6e4a43d6da4f6725fa",
-    "url": "/larbatista/static/js/main.5cf9f03f.chunk.js"
+    "revision": "3d58d9d5348b653af2d2",
+    "url": "/larbatista/static/js/main.446f401f.chunk.js"
   },
   {
     "revision": "d02a69cad518b9340412",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b753a58702ad51354a4a00e7418eae7e",
     "url": "/larbatista/static/media/imposto.b753a587.png"
+  },
+  {
+    "revision": "216ac0d17246be3c0c9503bc05c3ea40",
+    "url": "/larbatista/static/media/imposto_pq.216ac0d1.png"
   },
   {
     "revision": "9df618c4ee7934730f075704452c74a3",
