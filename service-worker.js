@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/larbatista/precache-manifest.9a9bf258918e39760d88aeaed896b765.js"
+  "/larbatista/precache-manifest.d7d08c0bc76c5ae3133a221e324e35c5.js"
 );
 
 self.addEventListener('message', (event) => {
