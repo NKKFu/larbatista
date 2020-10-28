@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b4fc13b9d3e1a64596536593e1ca1870",
+    "revision": "3bcf7ab2fbfce4be8d46cd8b82064d24",
     "url": "/larbatista/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/larbatista/static/js/2.27a85411.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8352290cc7cb92e8fc16",
-    "url": "/larbatista/static/js/main.786797c5.chunk.js"
+    "revision": "8296b9b20b77117ecefa",
+    "url": "/larbatista/static/js/main.ec9a6d58.chunk.js"
   },
   {
     "revision": "d02a69cad518b9340412",
