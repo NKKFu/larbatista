@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/larbatista/static/js/main.d0905878.chunk.js",
+    "main.js.map": "/larbatista/static/js/main.d0905878.chunk.js.map",
+    "runtime-main.js": "/larbatista/static/js/runtime-main.bb0492c7.js",
+    "runtime-main.js.map": "/larbatista/static/js/runtime-main.bb0492c7.js.map",
+    "static/js/2.27a85411.chunk.js": "/larbatista/static/js/2.27a85411.chunk.js",
+    "static/js/2.27a85411.chunk.js.map": "/larbatista/static/js/2.27a85411.chunk.js.map",
+    "index.html": "/larbatista/index.html",
+    "precache-manifest.55931841b6e3785c62b7fecd77b0f82d.js": "/larbatista/precache-manifest.55931841b6e3785c62b7fecd77b0f82d.js",
+    "service-worker.js": "/larbatista/service-worker.js",
+    "static/js/2.27a85411.chunk.js.LICENSE.txt": "/larbatista/static/js/2.27a85411.chunk.js.LICENSE.txt",
+    "static/media/imposto.png": "/larbatista/static/media/imposto.b753a587.png",
+    "static/media/logo.png": "/larbatista/static/media/logo.9df618c4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb0492c7.js",
+    "static/js/2.27a85411.chunk.js",
+    "static/js/main.d0905878.chunk.js"
+  ]
+}
