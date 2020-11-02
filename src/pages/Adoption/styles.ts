@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    min-height: calc(100vh - 195px);
+    box-shadow: 0px 0px 5px 0px rgba(1,1,1,0.2);
+    max-width: 1300px;
+    flex: 1;
+    margin: 0 auto 0 auto;
+    background-color: #f2f2f2;
 
     .main-container {
-        max-width: 1000px;
-        margin: 0 auto;
         padding: 0 20px;
-        color: gray;
 
         h1 {
             color: black;

@@ -57,9 +57,11 @@ export const Family: React.FC = () => {
 
                 <h2>"A tempestade passa a vida continua e sua família pode fazer a diferença"</h2>
                 <h3>Faça parte de nossa família!</h3>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeAT5peUCP_FrtewNA07iOqux8EUhAcPkroUfYJbWfnPxEcmQ/viewform?embedded=true"
+                    frameBorder="0" marginHeight={0} marginWidth={0}>Carregando…</iframe>
             </div>
             <Footer />
-            {/* Google Forms */}
         </Container>
     );
 }

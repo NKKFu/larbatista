@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/logo.png';
-import { Container } from './styles';
+import { Container, Hamburguer } from './styles';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 interface HeaderButtonProps {
     title: string;
@@ -18,22 +19,24 @@ export const HeaderButton: React.FC<HeaderButtonProps> = ({ title, link }) => {
 }
 
 export const Header: React.FC = () => {
+    const [hamburguerMenuOpen, setHamburguerMenuOpen] = useState(false);
+
     return (
         <Container>
             <Link to="/">
                 <img src={logo}></img>
             </Link>
-            <h2>
-                {/* Lar Batista Janell Doyle */}
-            </h2>
-            <div className="button-group">
+            <Hamburguer className="hamburguer" isOpen={hamburguerMenuOpen} onClick={() => { setHamburguerMenuOpen(!hamburguerMenuOpen); }}>
+                <GiHamburgerMenu size={'auto'} color="#000" />
+            </Hamburguer>
+            <div className="button-group" onClick={() => { setHamburguerMenuOpen(!hamburguerMenuOpen); }}>
                 <HeaderButton link="/" title="Início" />
-                <HeaderButton link="familia-acolhedora" title="Sobre nós" />
+                <HeaderButton link="sobre" title="Sobre nós" />
                 <HeaderButton link="familia-acolhedora" title="Familia Acolhedora" />
                 <HeaderButton link="seja-padrinho" title="Seja padrinho" />
                 <HeaderButton link="doacao" title="Doação" />
                 <HeaderButton link="adoption" title="Adoção" />
-                <HeaderButton link="familia-acolhedora" title="Contato" />
+                <HeaderButton link="contato" title="Contato" />
             </div>
         </Container>
     );

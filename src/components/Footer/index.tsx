@@ -10,10 +10,10 @@ export const Footer: React.FC = () => {
 }
 
 const Container = styled.footer`
-    /* position: fixed; */
+    position: static;
     bottom: 0;
-    background-color: rgb(255, 244, 176, 0.9);
-    color: #b1b389;
+    background-color: #2BB673;
+    color: #FFF;
     width: 100%;
     padding: 20px 0;
     font-weight: bold;

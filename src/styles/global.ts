@@ -6,14 +6,19 @@ export const GlobalContainer = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
         font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     }
     body {
+        background-color: #EEEDF5;
         overflow-y:scroll;
+        overflow-x:hidden;
+        min-width: 100vw; 
     }
 
-    #root, body {
-        padding-top: 50px;
+    #root {
+        min-height: 100vh;
+        width: 100%;
     }
 
     /* width */

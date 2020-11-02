@@ -8,6 +8,8 @@ import { Home } from './pages/Home/index';
 import * as serviceWorker from './serviceWorker';
 import { GlobalContainer } from './styles/global';
 import { Adoption } from './pages/Adoption';
+import { Contato } from './pages/Contato';
+import { Sobre } from './pages/Sobre';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,6 +21,8 @@ ReactDOM.render(
         <Route path={`/seja-padrinho`} exact component={BecomeSponsor} />
         <Route path={`/doacao`} exact component={Donation} />
         <Route path={`/adoption`} exact component={Adoption} />
+        <Route path={`/contato`} exact component={Contato} />
+        <Route path={`/sobre`} exact component={Sobre} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

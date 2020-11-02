@@ -13,9 +13,11 @@ export const BecomeSponsor: React.FC = () => {
                 <p>
                     Ajude a causa, faça parte de nossa família!
                 </p>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSflef6AM8ncA-fQq94RcKpr-4s3hZywUVicA5vrUOl2wC6cdQ/viewform?embedded=true"
+                    frameBorder="0" marginHeight={0} marginWidth={0}>Carregando…</iframe>
             </div>
             <Footer />
-            {/* Google Forms */}
         </Container>
     );
 }

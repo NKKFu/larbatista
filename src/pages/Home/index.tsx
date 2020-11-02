@@ -6,6 +6,7 @@ import img from './imposto.png';
 import { AboutCardContainer, Container } from './styles';
 
 interface AboutCardProps {
+    link: string;
     title: string;
     description: string;
     stylesProps: {
@@ -14,12 +15,26 @@ interface AboutCardProps {
         backgroundColor: string;
     };
 }
-const AboutCard: React.FC<AboutCardProps> = ({ title, description, stylesProps }) => {
+const AboutCard: React.FC<AboutCardProps> = ({ link, title, description, stylesProps }) => {
     return (
         <AboutCardContainer {...stylesProps}>
-            <h2>{title}</h2>
-            <p>{description}</p>
+            <Link to={link}>
+                <h2>{title}</h2>
+                <p>{description}</p>
+            </Link>
         </AboutCardContainer>
+    )
+}
+
+interface ImgCardProps {
+    url: string;
+    alt: string;
+}
+const ImgCard: React.FC<ImgCardProps> = ({ alt, url }) => {
+    return (
+        <div className="img-container">
+            <img src={url} alt={alt} />
+        </div>
     )
 }
 
@@ -37,55 +52,59 @@ export const Home: React.FC = () => {
             </div>
             <div className="cards-list">
                 <AboutCard
+                    link="quemsomos"
                     title="Quem Somos"
                     description="Somos o Lar Batista Janell Doyle,um lugar feliz, um lugar de alegria e sorrisos, de amor e de novos começos."
                     stylesProps={{
-                        titleColor: '#c20000',
-                        descriptionColor: '#ff6b6b',
-                        backgroundColor: '#ffebeb'
+                        titleColor: '#FFF',
+                        descriptionColor: '#FFF',
+                        backgroundColor: '#F73962'
                     }}
                 />
                 <AboutCard
+                    link="historia"
                     title="Nossa História"
                     description="O Lar Batista foi gerado em nosso coração como um sonho!. Inauguramos em 12 de Outubro de 1996 com uma criança."
                     stylesProps={{
-                        titleColor: '#006673',
-                        descriptionColor: '#28abbd',
-                        backgroundColor: '#c4f8ff'
+                        titleColor: '#FFF',
+                        descriptionColor: '#FFF',
+                        backgroundColor: '#10C6A7'
                     }}
                 />
                 <AboutCard
+                    link="nossaequipe"
                     title="Nossa Equipe"
                     description="Conheça a nossa equipe técnica e de cuidadores que vivem com o compromisso de proprorcionar melhor qualidade de vida às crianças. "
                     stylesProps={{
-                        titleColor: '#1e7300',
-                        descriptionColor: '#70c951',
-                        backgroundColor: '#d7ffc9'
+                        titleColor: '#FFF',
+                        descriptionColor: '#FFF',
+                        backgroundColor: '#FB6F1A'
                     }}
                 />
                 <AboutCard
+                    link="contato"
                     title="Fale Conosco"
                     description="As crianças só precisam do seu amor. Fale conosco! contato@larbatistamanaus.org"
                     stylesProps={{
-                        titleColor: '#9e4700',
-                        descriptionColor: '#ffa154',
-                        backgroundColor: '#ffe2c9'
+                        titleColor: '#FFF',
+                        descriptionColor: '#FFF',
+                        backgroundColor: '#87C92B'
                     }}
                 />
             </div>
             <div className="sponsors-list">
                 <h1>Nossos Padrinhos</h1>
                 <div>
-                    <img src="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
-                    <img src="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
-                    <img src="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
-                    <img src="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
-                    <img src="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
-                    <img src="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
-                    <img src="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
-                    <img src="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
-                    <img src="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
-                    <img src="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
+                    <ImgCard url="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
+                    <ImgCard url="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
+                    <ImgCard url="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
+                    <ImgCard url="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
+                    <ImgCard url="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
+                    <ImgCard url="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
+                    <ImgCard url="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
+                    <ImgCard url="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
+                    <ImgCard url="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
+                    <ImgCard url="https://www.aquila.com.br/wp-content/uploads/2019/05/logo-prefeitura-manaus.png" alt="" />
                 </div>
             </div>
             <div className="sponsor-button">
